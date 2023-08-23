@@ -1,0 +1,275 @@
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,600&family=Oswald:wght@200;400;600&display=swap');
+
+
+@font-face {
+    font-family: Flame-Regular;
+    src: url(".././assets/fonts/flame/FlameRegular.otf") format("opentype");
+}
+
+
+@font-face {
+    font-family: Flame-Bold;
+    src: url(".././assets/fonts/flame/FlameBold.otf") format("opentype");
+}
+html{
+  min-height: 100vh;
+}
+ *{
+   box-sizing: border-box;
+ }
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.35s ease 0s;
+font-family: 'Flame', sans-serif;
+
+  line-height: 1.6;
+  color:#404040;
+
+
+}
+
+header.header-container {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 50px;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+}
+.header-wrapper {
+  display: flex;
+  flex: 1;
+
+  justify-content: space-between;
+}
+.hamburger-wrapper {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+
+  z-index: 100;
+  height: 35px;
+  width: auto;
+  cursor: pointer;
+  appearance:none;
+  padding: 12px 15px;
+}
+
+.hamburger-button, .hamburger-wrapper:after, .hamburger-wrapper:before{
+  content:'';
+  display: block;
+  height: 3px;
+  width: 25px;
+  margin: 6px 0;
+  background-color: #ed7801;
+
+}
+.hamburger-wrapper.is-active:after{
+  transform: rotate(45deg) translate(-9px, -5px);
+
+
+}
+.hamburger-wrapper.is-active:before{
+  transform: rotate(-45deg) translate(-8px, 4px);
+
+
+}
+.hamburger-wrapper.is-active .hamburger-button {
+  opacity: 0;
+
+}
+.main-logo-wrapper {
+
+
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.main-logo-wrapper>a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-logo-wrapper>a>img{
+  width: 100%;
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+.shopping-logo-wrapper {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 11px;
+  background-color: #ed7801;
+
+  z-index: 10;
+}
+
+.overlay-menu {
+  position: fixed;
+    background-color: #2d2d2d;
+  z-index:-1;
+  visibility: hidden;
+
+  width: 100%;
+  height: 100%;
+  margin-top: 59px;
+  padding-top: 50px;
+    transition: opacity .35s,visibility .35s,height .35s;
+  overflow: hidden;
+  opacity: 0;
+}
+.overlay-menu.open {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1000;
+
+}
+.overlay-menu>ul{
+  list-style: none;
+  padding: 0 20px;
+
+}
+.overlay-menu a {
+    text-decoration: none;
+    font: 32px/36px "Flame-Regular";
+padding: 8px 0px 20px;
+min-height: 20px;
+display: block;
+color: white;
+position: relative;
+}
+.overlay-menu span {
+  font: 15px/22px "Flame-Regular";
+color: #faaf18;
+display: block;
+}
+
+.content-wrapper {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.content-block {
+  background-image: url(../assets/images/BK_bg.jpg);
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+width: 100%;
+z-index: 1;
+  height: 100vh;
+padding-top: 30px;
+}
+
+.crown-content {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 14px 18px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 13px -8px #6b6b6b;
+    margin: 20px 0 40px;
+    min-width: 200px;
+    background: white;
+}
+.customer-crown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex:2;
+
+}
+.customer-crown > .crown-text {
+  font-family: 'Barlow', sans-serif;
+font-family: 'Oswald', sans-serif;
+  font: 16px/22px "Barlow";
+  font-weight: bold;
+    color: #2d2d2d;
+    text-transform: none;
+    margin: auto;
+}
+
+.crown-icon {
+  max-width:14px;
+  text-align: center;
+  height: auto;
+}
+.login-crown {
+  background-color: #ed7801;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+
+}
+.login-crown>a{
+  text-decoration: none;
+  color: white;
+  font: 15px/-56px "Flame-Regular";
+}
+
+h2.menus-title {
+  line-height: 20px;
+font-size: 20px;
+text-align: center;
+font-family: "Flame-Bold";
+color: #8b542f;
+font-weight: normal;
+}
+
+.menus-container {
+  margin: 0 auto;
+  width: 100%;
+    padding: 0px 15px;
+
+}
+.menus-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap:8px;
+
+}
+.card-menu{
+  background-color: white;
+  display: flex;
+  min-width: 100px;
+  max-width: 49%;
+  padding: 20px;
+  flex-direction: column;
+    
+      border-radius: 10px;
+}
+h3.menu-item-title {
+  font-family: "Flame-Bold";
+color: #8b542f;
+text-align: center;
+    margin: 5px 0;
+font-weight: normal;
+}
+
+.image-menu-wrapper{
+  width: 100%;
+}
+.image-menu-wrapper>img {
+  object-fit: cover;
+width: 100%;
+}

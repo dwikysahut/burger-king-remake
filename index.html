@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title> Burger King</title>
+  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Font Awesome -->
+  <link href="https://db.onlinewebfonts.com/c/29eee6d957e73039264c9de9fd949d20?family=Flame+Sans" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/flame-3" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/8cfae7c41a396f8547c614570f9c8e96?family=FLAME+Regular" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header class="header-container">
+    <div class="header-wrapper">
+
+      <div class="hamburger-wrapper">
+        <div class="hamburger-button">
+        </div>
+      </div>
+      <!-- Font Awesome -->
+      <div class="main-logo-wrapper">
+        <a href="#">
+          <img src='./assets/images/bk-logo.png'/>
+        </a>
+      </div>
+      <!-- right nav -->
+      <div class="shopping-logo-wrapper">
+        <a href="#">
+          <i class="fas fa-shopping-cart fa-2x" style="color: #fcfcfc; width:100%;"></i>
+        </a>
+      </div>
+
+
+
+    </div>
+
+    <!-- dropdown menu -->
+    <nav class="overlay-menu">
+      <ul>
+        <li><a href="#">Home </a></li>
+        <li><a href="#"><span>Delivery</span>Order</a></li>
+        <li><a href="#"><span>Get Fresh</span>Promotions</a></li>
+        <li><a href="#"><span>Exclusive</span>Large Order</a></li>
+        <li><hr></li>
+        <li class="small-list"><a href="#">Login</a></li>
+
+      </ul>
+
+    </nav>
+  </header>
+  <div class="slide">
+    <div class="owl-carousel">
+      <div> Your Content </div>
+      <div> Your Content </div>
+      <div> Your Content </div>
+      <div> Your Content </div>
+      <div> Your Content </div>
+      <div> Your Content </div>
+      <div> Your Content </div>
+    </div>
+    </div>
+    <div class="content-block">
+
+      <div class="content-wrapper">
+
+        <div class="crown-content">
+          <div class="customer-crown">
+            <h3 class="crown-text">Get exclusive benefits now as a BK Member!<span><img class="crown-icon" src="./assets/images/crown-icon.png" alt=""></span>   </h3>
+
+          </div>
+          <div class="login-crown">
+            <a href="#" class="login-button">Login</a>
+
+          </div>
+
+        </div>
+        <h2 class="menus-title">Our Menus</h2>
+        <div class="menus-container">
+          <div class="menus-wrapper">
+
+          <div class="card-menu">
+            <div class="image-menu-wrapper">
+            <img src="./assets/images/menu-foto.jpg" alt="">
+          </div>
+            <h3 class="menu-item-title">Pasta Merdeka</h3>
+          </div>
+          <div class="card-menu">
+            <div class="image-menu-wrapper">
+            <img src="./assets/images/menu-foto.jpg" alt="">
+          </div>
+            <h3 class="menu-item-title">Pasta Merdeka</h3>
+          </div>
+          <div class="card-menu">
+            <div class="image-menu-wrapper">
+            <img src="./assets/images/menu-foto.jpg" alt="">
+          </div>
+            <h3 class="menu-item-title">Pasta Merdeka</h3>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script >
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items:3
+        },
+        1000:{
+          items:5
+        }
+      }
+    })
+  </script>
+
+</body>
+
+</html>
